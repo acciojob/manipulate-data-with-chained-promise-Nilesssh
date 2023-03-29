@@ -7,6 +7,6 @@ function nice(arr) {
 	setTimeout(()=>mulWithTwo(arr),2000);
 }
 function mulWithTwo(arr) {
-	const ans = arr.map(ele => ele*2);
+	const ans = arr.map(ele => ele%2===0 ? ele*2 : ele);
 	document.getElementById("output").innerHTML = ans;
 }
